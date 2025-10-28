@@ -16,7 +16,6 @@ def task1(weather: str) -> str:
     else:
         return "error"
 
-    
 if __name__ == "__main__":
 
     #weather = "SCRTS" ---> Rainy
