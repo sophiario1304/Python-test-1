@@ -2,15 +2,19 @@ from to_do import TODO
 
 def task5(scores: list[int]) -> list[int]:
 
-    if len(scores) <= 0:
-        return [-1]
+        if len(scores) == 0:
+            return [-1]
 
-    result = []
-    length_of_scores = len(scores)
-    for index, number in enumerate(scores):
-        value = number * index
-        result.append(value)
-    return result
+        result = []
+
+        for index in range(len(scores)):
+            if index < len(scores) - 1:
+                result.append(scores[index] + scores[index + 1])
+            else:
+                result.append(scores[index] * scores[index])
+
+        return result
+
 
 if __name__ == "__main__":
 
