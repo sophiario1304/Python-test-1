@@ -2,13 +2,14 @@ from to_do import TODO
 
 def task10(classroom: list[str], student: str) -> int:
 
-    student_name = ["Anna","Eve","Bob"]
-    result = []
-    length_of_classroom = len(classroom)
-    for student in enumerate(classroom):
-        if student.count(student_name) in classroom:
-            max_name = student_name > 1
-            return max_name
+    
+    result = 0
+
+    for index, name in enumerate(classroom):
+        if name.lower() == student.lower():
+            result += index
+
+    return result
 
 if __name__ == "__main__":
 
