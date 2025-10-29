@@ -2,7 +2,7 @@ from to_do import TODO
 
 def task6(orders: list[str]) -> list[str]:
 
-    customer_name = orders.s
+    customer_name = orders
     return
 
 if __name__ == "__main__":
